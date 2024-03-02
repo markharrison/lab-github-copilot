@@ -1,6 +1,6 @@
-# Visual Studio  
+# GitHub Copilot - Hands on Lab 
 
-Mark Harrison : 20 February 2024  
+Mark Harrison : 2 March 2024  
 
 ## Introduction
 

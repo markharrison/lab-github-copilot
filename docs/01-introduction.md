@@ -9,7 +9,7 @@ sidebar_label: 'Introduction'
 
 Hands-on Lab Script
 
-27 February 2024
+2 March 2024
 
 
 ## Introduction
