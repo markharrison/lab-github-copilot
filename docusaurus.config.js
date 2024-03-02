@@ -60,6 +60,12 @@ const config = {
         },
         items: [
           {
+            position: 'left',
+            label: 'Labs',
+            to: 'https://markharrison.io/labs',
+            target: '_self',
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
