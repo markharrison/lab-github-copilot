@@ -11,6 +11,7 @@ Hands-on Lab Script
 
 2 March 2024
 
+![](images/lab-copilot.jpg)
 
 ## Introduction
 
