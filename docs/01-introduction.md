@@ -14,7 +14,7 @@ Hands-on Lab Script
 
 ## Introduction
 
-GitHub Copilot is your AI pair programmer.  It uses the OpenAI Codex to suggest code and entire functions in real-time, from within the editor.
+GitHub Copilot is your AI pair programmer.  It uses OpenAI Codex to suggest code and entire functions in real-time, from within the editor.
 
 Trained on billions of lines of code, GitHub Copilot turns natural language prompts into coding suggestions across dozens of languages.
 
