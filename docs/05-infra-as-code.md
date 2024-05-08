@@ -48,7 +48,7 @@ How do I use the Azure CLI to deploy the Bicep file
 ![](images/infra3.png)
 
  
-- The response from Copilot Chat explains how to use the Bicep file.  Using this, create the App Service / App Service Plan 
+- The response from Copilot Chat explains how to use the Bicep file.  Using this advice to understand the command needed, create the App Service / App Service Plan .
 
 
 ```
