@@ -60,7 +60,7 @@ az deployment group create --resource-group $RG --template-file infra/appservice
 ![alt text](images/infra4.png)
 
 
-Can now see that our infrastructure has been deployed. 
+We can now see that our infrastructure has been deployed. 
 
 ![alt text](images/infra5.png)
 
