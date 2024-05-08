@@ -20,7 +20,7 @@ I want a single bicep file that deploys both an Azure App Service and an Azure A
 I want the Windows free tier .
 ```
 
-- Just copy the suggested Bicep content into `appservice.bicep` and save.
+- Check you are happy with the suggested Bicep content and if so, then copy into `appservice.bicep` and save.
 
 ![](images/infra1.png)
 
