@@ -21,14 +21,6 @@ Trained on billions of lines of code, GitHub Copilot turns natural language prom
 
 [https://copilot.github.com/](https://copilot.github.com/)
 
-## Prerequisites 
-
-The following are required to complete the lab:
-
-- Visual Studio Code
-  - Extensions:  Copilot, Copilot Chat. C# Dev Kit
-- GitHub Copilot license
-
 
 ## Notes
 

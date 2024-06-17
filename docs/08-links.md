@@ -12,3 +12,10 @@ slug: /Links
 ## Tips & Tricks
 
 [https://github.blog/2024-03-25-how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/](https://github.blog/2024-03-25-how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/)
+
+
+## Hackathon content 
+
+[https://github.com/microsoft/CopilotHackathon](https://github.com/microsoft/CopilotHackathon)
+
+[https://github.com/sukantsondhi/Copilot-Workshop](https://github.com/sukantsondhi/Copilot-Workshop)

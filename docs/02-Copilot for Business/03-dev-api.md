@@ -23,7 +23,7 @@ The files should be called "Colors".
 List together the dotnet commands to scaffold a solution. 
 ```
 
-![alt text](images/devapi1.png)
+![alt text](../images/devapi1.png)
 
 Response will be something like this :
 
@@ -50,19 +50,19 @@ dotnet add reference ../Colors.API/Colors.API.csproj
 - Within VSCode open up terminal.  Use the commands suggested by Copilot Chat.
   - Notice the files created. Two projects (API and Test).
 
-![](images/devapi2.png)
+![](../images/devapi2.png)
 
 - Open Solution file - use F1 `.NET Open Solution`
 
-![](images/devapi3.png)
+![](../images/devapi3.png)
 
 - Open `Program.cs` - remove existing Routes & Model (things to do with weather)
 
-![alt text](images/devapi4.png)
+![alt text](../images/devapi4.png)
 
 We now have our basic API skeleton code - we shall now add the logic for our Colors API
 
-![alt text](images/devapi5.png)
+![alt text](../images/devapi5.png)
 
 
 ## Add Data model
@@ -79,7 +79,7 @@ Create colors model called ColorsItem to include a name and hexcode.
 
 - Insert code into `ColorsItem.cs`
 
-![](images/devapi6.png)
+![](../images/devapi6.png)
 
 
 - Switch back to `Program.cs`  
@@ -92,7 +92,7 @@ Intialize a list of colors with  "red", "yellow", "black"
 
 - Insert code into `Program.cs`
 
-![](images/devapi7.png)
+![](../images/devapi7.png)
 
 
 ## Add API routes 
@@ -106,7 +106,7 @@ Second - an API to insert a new color.
 im using .NET 8 minimal APIs
 ```
 
-![](images/devapi8.png)
+![](../images/devapi8.png)
 
 You can also prompt using an inline comment
 
@@ -114,7 +114,7 @@ You can also prompt using an inline comment
 //add a route to return a random color
 ```
 
-![](images/devapi9.png)
+![](../images/devapi9.png)
 
 - Hit `Tab` to accept the suggestion.  Or use `Alt [` and `Alt ]` to view alternatives
 
@@ -134,7 +134,7 @@ I want a ValidateHexCode function using Regex - add to static class  ColorUtilit
 
 - Insert code into `ColorUtilities.cs` 
 
-![](images/devapi10.png) 
+![](../images/devapi10.png) 
 
 - Irrespective of the code suggested, for lab purposes only check for 6 character hexcodes - we will fix this later 
 
@@ -157,7 +157,7 @@ I want a ValidateHexCode function using Regex - add to static class  ColorUtilit
 // hexcode validation
 ```
 
-![alt text](images/devapi11.png)
+![alt text](../images/devapi11.png)
 
 
 ## Run the API WebApp
@@ -166,7 +166,7 @@ Our API code is now complete
 
 - Use F5 to run the application 
 
-![alt text](images/run1.png)
+![alt text](../images/run1.png)
 
 Use the Swagger UI to test the WebApi
 
@@ -178,5 +178,5 @@ Use the Swagger UI to test the WebApi
 
 - Get a random color 
 
-![alt text](images/run2.png)
+![alt text](../images/run2.png)
 

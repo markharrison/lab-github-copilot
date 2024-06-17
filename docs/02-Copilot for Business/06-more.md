@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'More'
+sidebar_label: 'More things to try'
 slug: /More
 ---
 

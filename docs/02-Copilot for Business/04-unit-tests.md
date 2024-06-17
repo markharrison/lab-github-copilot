@@ -23,15 +23,15 @@ There is one part of development that can be quite tedious - creating unit tests
 
 - Just copy in the `[TestMethods]`
 
-![](images/test1.png)
+![](../images/test1.png)
 
 - Load the Test blade and hit refresh icon 
 
-![](images/test2.png)
+![](../images/test2.png)
 
 - Run Tests
 
-![](images/test3.png)
+![](../images/test3.png)
 
 
 Depending on the code for hexcode validation - the Test for 3 digit Hexcodes may fail .  And our validate code never tested for a null value.
@@ -42,9 +42,9 @@ Depending on the code for hexcode validation - the Test for 3 digit Hexcodes may
 Fix this code .  Make it resilient.
 ```
 
-![](images/test4.png)
+![](../images/test4.png)
 
 - Re-run unit tests ... make sure they now all pass
 
-![](images/test5.png)
+![](../images/test5.png)
 

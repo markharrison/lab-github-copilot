@@ -17,7 +17,7 @@ code .
 
 ```
 
-![](images/start1.png)
+![](../images/start1.png)
 
 
 ## Check GitHub Copilot is enabled
@@ -26,23 +26,23 @@ code .
 
 - Hover over icon in bottom right handcorner to show GitHub Copilot is running
 
-![](images/start2.png)
+![](../images/start2.png)
 
 - If not signed in, then authenticate to GitHub ... you will need credentials with an account that has GitHub Copilot enabled
 
-![](images/start3.png)
+![](../images/start3.png)
 
-![](images/start4.png)
+![](../images/start4.png)
 
 ## Check GitHub Copilot Chat is enabled
 
 - Select the Copilot Chat icon on the left ... notice the conversational GPT-like experience
 
-![](images/start5.png)
+![](../images/start5.png)
 
 - Ask it a question 
 
-![](images/start6.png)
+![](../images/start6.png)
 
 
 ## Ready to code 
