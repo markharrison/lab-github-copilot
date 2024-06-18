@@ -17,7 +17,7 @@ Within GitHub - we can use the Copilot Chat Assistant to ask general questions a
 
 Lets understand more about a specific repository
 
-- Select a repo
+- Select a repository
 
 ## Index repository 
 
