@@ -39,6 +39,8 @@ We can make the chat conversation full screen
 
 ![alt text](../images/codebase4.png)
 
+## Ask questions about activity 
+
 We can include questions about issues, pull requests, commits and releases. 
 
 ![alt text](../images/codebase5.png)
