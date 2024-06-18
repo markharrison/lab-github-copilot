@@ -27,7 +27,7 @@ We can improve the response quality by indexing the repository.
 
 ![alt text](../images/codebase2.png)
 
-## Ask questions about codebase
+## Ask questions about repository codebase
 
 - Enter a question to learn more about the code stored in the repository
 
@@ -39,7 +39,7 @@ We can make the chat conversation full screen
 
 ![alt text](../images/codebase4.png)
 
-## Ask questions about activity 
+## Ask questions about repository activity 
 
 We can include questions about issues, pull requests, commits and releases. 
 
