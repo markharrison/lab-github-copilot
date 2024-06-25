@@ -16,6 +16,10 @@ Other things to try
 
 Ask Copilot about syntax or general programming concepts without having to look through documentation or web search. Use natural language.
 
+## Documentation 
+Ask Copilot to write the readme.md 
+Ask Copilot to comment the code 
+
 ## Explain
 If you want to understand the behavior of the code or how it works, ask for an explanation.
 
