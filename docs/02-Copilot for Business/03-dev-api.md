@@ -87,7 +87,7 @@ Create colors model called ColorsItem to include a name and hexcode.
 - Ask Copilot Chat the following
 
 ```
-Intialize a list of colors with  "red", "yellow", "black" 
+Intialize a list of ColorsItem with  "red", "yellow", "black" 
 ```
 
 - Insert code into `Program.cs`
