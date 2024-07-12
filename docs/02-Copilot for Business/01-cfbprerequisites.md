@@ -5,12 +5,11 @@ slug: /cfbprerequisites
 
 # GitHub Copilot for Business
 
-## Prerequisites 
+## Prerequisites
 
 The following are required to complete the lab:
 
 - Visual Studio Code
-  - Extensions:  Copilot, Copilot Chat. C# Dev Kit ... update to latest versions
+  - Extensions:  Copilot, Copilot Chat. C# Dev Kit ... update to latest versions.
 
-- GitHub Copilot for Business license
-
+- GitHub Copilot for Business license.

@@ -11,7 +11,7 @@ Hands-on Lab Script
 
 2 March 2024
 
-![](images/lab-copilot.jpg)
+![alttext](images/lab-copilot.jpg)
 
 ## Introduction
 
@@ -21,9 +21,6 @@ Trained on billions of lines of code, GitHub Copilot turns natural language prom
 
 [https://copilot.github.com/](https://copilot.github.com/)
 
-
 ## Notes
 
 When following this lab, be aware that Copilot is probabilistic, not deterministic.  The used LLMs are sophisticated probability engines, so you might not get the same results for the exact same prompts every time.
-
-
