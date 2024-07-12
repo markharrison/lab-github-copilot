@@ -13,7 +13,7 @@ First we need a knowledge base, that is some markdown files containing informati
 
 - You can either:
 
-  - Use the provided knowledge base at [https://github.com/markharrison-org/Colors-kb](<https://github.com/markharrison-org/Colors-kb>).
+  - Use the provided knowledge base at [https://github.com/markharrison/Colors-kb](<https://github.com/markharrison/Colors-kb>).
   - Alternatively, use (or create) some markdown files with information that interests you, or is relevant to you/your organisation.
 
 - Create a repository in a GitHub Organisation and upload the markdown files.
