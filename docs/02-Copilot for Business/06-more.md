@@ -63,3 +63,11 @@ Note how after Add - it suggests you probably want other arithmetic functions
 Animal class  
 Dog class, Cat class  
 Make Sound
+
+## Game
+
+I want to develop a game for web (html,css,javascript) that resembles Pathagon . It is a board of 8 x 8 . players take in turns to place a counter (red or blue) on the board.
+Players take turns placing a counter on any available cell of the board.
+Any placed counter must be removed from the board if it is surrounded on its two immediate adjacent sides by their opponent’s counter. So this check must be made every time a counter is placed.
+The winner is the first to create an unbroken path connecting their two opposite sides of the board.
+
