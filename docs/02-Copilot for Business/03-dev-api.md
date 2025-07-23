@@ -7,6 +7,20 @@ slug: /dev-api
 
 The objective is to create an API WebApp for handling color objects.
 
+## Start with nothing
+
+- Create empty folder and open Visual Studio Code in that folder.
+
+```powershell
+mkdir colorsapi
+cd colorsapi
+dir
+code . 
+
+```
+
+![alttext](../images/devapi1.png)
+
 ## Scaffold the basic solution
 
 Lets use GitHub Copilot Chat to help scaffold a basic API WebApp.  The better the prompt, the better suggestion returned by GitHub Copilot.
@@ -16,93 +30,87 @@ Lets use GitHub Copilot Chat to help scaffold a basic API WebApp.  The better th
 - Ask Copilot Chat the following.
 
 ```text
-I want to create dotnet 8.0 project usinng webapi template  - also need a MSTest unit Test project.
+I want to create dotnet 9.0 project using webapi template  - also need a MSTest unit Test project.
 I need a project reference from Test project to API project.
-The files should be called "Colors".  
+The files should be called "ColorsAPI".  
 List together the dotnet commands to scaffold a solution. 
 ```
 
-![alt text](../images/devapi1.png)
+![alt text](../images/devapi2.png)
 
 Response will be something like this :
 
 ```text
-# Create a new solution
-dotnet new sln -n Colors
-
-# Create a new Web API project
-dotnet new webapi -n Colors.API
-
-# Create a new MSTest project
-dotnet new mstest -n Colors.Tests
-
-# Add the projects to the solution
-dotnet sln Colors.sln add Colors.API/Colors.API.csproj
-dotnet sln Colors.sln add Colors.Tests/Colors.Tests.csproj
-
-# Add a project reference from the test project to the API project
-cd Colors.Tests
-dotnet add reference ../Colors.API/Colors.API.csproj
-
+dotnet new sln -n ColorsAPI
+dotnet new webapi -n ColorsAPI --framework net9.0
+dotnet new mstest -n ColorsAPI.Tests --framework net9.0
+dotnet sln ColorsAPI.sln add ColorsAPI/ColorsAPI.csproj
+dotnet sln ColorsAPI.sln add ColorsAPI.Tests/ColorsAPI.Tests.csproj
+dotnet add ColorsAPI.Tests reference ColorsAPI/ColorsAPI.csproj
 ```
 
-- Within VSCode open up terminal.  Use the commands suggested by Copilot Chat.
-  - Notice the files created. Two projects (API and Test).
+- There is an icon to copy the chat text returned from Copilot.  
 
-![alttext](../images/devapi2.png)
+- Within VSCode open up terminal.  Paste and run commands suggested by Copilot Chat.
 
-- Open Solution file - use F1 `.NET Open Solution`.
+- Notice the files created. Two projects (API and Test).
 
 ![alttext](../images/devapi3.png)
 
+- Open Solution file - use F1 `.NET Open Solution`.
+
+![alttext](../images/devapi4.png)
+
 - Open `Program.cs` - remove existing Routes & Model (things to do with weather).
 
-![alt text](../images/devapi4.png)
+![alttext](../images/devapi5.png)
 
 We now have our basic API skeleton code - we shall now add the logic for our Colors API.
 
-![alt text](../images/devapi5.png)
+![alttext](../images/devapi6.png)
 
-## Add Data model
+## Add data model
 
 We first define the schema for our ColorsItem object:
 
-- Create `ColorsItem.cs`  
+- Switch to Agent mode ... option at bottom of Chat panel
 
-- Ask Copilot Chat the following
+- Ask Copilot Chat the following:
 
 ```text
-Create colors model called ColorsItem to include a name and hexcode.
+Create file 'ColorsItem.cs' .
+Add to this file a colors model called ColorsItem to include a name and hexcode.
 ```
 
-- Insert code into `ColorsItem.cs`
+- Click the button to `Create file` and specify the location to be within the ColorsAPI project.  (sometimes you may need to create the file first)
 
-![alttext](../images/devapi6.png)
+![alttext](../images/devapi7.png)
 
 - Switch back to `Program.cs`  
 
 - Ask Copilot Chat the following:
 
 ```text
-Intialize a list of ColorsItem with  "red", "yellow", "black" 
+Intialize a list of type ColorsItem with  "red", "yellow", "black" 
 ```
 
-- Insert code into `Program.cs`
+- Insert the suggested code into `Program.cs`
 
-![alttext](../images/devapi7.png)
+![alttext](../images/devapi8.png)
+
 
 ## Add API routes
 
 - Ask Copilot Chat the following:
 
 ```text
-using ColorsItem - create two API routes.
+Using ColorsItem - create two API routes.
 First - an API to return all colors.   
 Second - an API to insert a new color.
-im using .NET 8 minimal APIs
+Use .NET 9 minimal APIs
 ```
 
-![alttext](../images/devapi8.png)
+![alttext](../images/devapi9.png)
 
 You can also prompt using an inline comment
 
@@ -110,59 +118,94 @@ You can also prompt using an inline comment
 //add a route to return a random color
 ```
 
-![alttext](../images/devapi9.png)
+- Hit `Tab` to accept , `Esc` to decline.
+
+![alttext](../images/devapi10.png)
 
 - Hit `Tab` to accept the suggestion.  Or use `Alt [` and `Alt ]` to view alternatives.
 
-## Add Utility function
+## Add utility function
 
-Wwe shall now add some logic to validate the hexcode passed in the API call to add a new color.
+We shall now add some logic to validate the hexcode passed in the API call to add a new color.
 
 - Create file `ColorUtilities.cs` and add code .
 
 - Ask Copilot Chat the following.
 
 ```text
+Create file `ColorUtilities.cs` and add code .
 I want a new static class called ColorUtilities.
-I want a ValidateHexCode function using Regex - add to static class  ColorUtilities.
+I want a ValidateHexCode function using Regex - add to static class ColorUtilities.
 ```
 
-- Insert code into `ColorUtilities.cs`.
+- Click the button to `Create file` and specify the location to be within the ColorsAPI project.  (sometimes you may need to create the file first)
 
-![alttext](../images/devapi10.png)
-
-- Irrespective of the code suggested, for lab purposes only check for 6 character hexcodes - we will fix this later.
+- Irrespective of the code suggested, for lab purposes only check for 6 character hexcodes - we will fix this later during testing,
 
 ```text
   string pattern = @"^#([A-Fa-f0-9]{6})$";   // 6 character 
   string pattern = @"^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";   // 3 or 6 character 
 ```
 
-- Try this inline comment:
+- Also, if present - remove any check for a null being passed - again, we will fix this later during testing.
+
+- Optional, try this inline comment:
 
 ```text
 // function to test for shade of red
 ```
+
+![alttext](../images/devapi11.png)
 
 - Switch back to  `Program.cs`.
 
 - Add Hexcode validation to the Insert new Color route .  Might need encouragement / prompting to use our validation utility function.
 
 ```text
-// hexcode validation
+// Validate the hex code before adding
 ```
 
-![alt text](../images/devapi11.png)
+![alttext](../images/devapi12.png)
+
+
+## Add Swagger UI
+
+Lets add the Swagger UI to our API application - this is a web interface that provides a visual interface for exploring and testing RESTful APIs.  
+
+There are several steps involved, but GitHub Copilot Agent Mode will take care of them for us - making the whole process much simpler.
+
+- Switch to Agent Mode using the button at the bottom of the Chat panel.
+
+- Then, ask Copilot Chat the following:
+
+```
+Add Swagger UI
+```
+
+- Accept any requests 
+
+![alttext](../images/devapi13.png)
+
+- Check the code that has been added which implements the Swagger UI.
+
+![alttext](../images/devapi14.png)
+
 
 ## Run the API WebApp
 
-Our API code is now complete
+Our API code is now complete.
 
-- Use F5 to run the application.
+- Use F5 to run the application. The application should compile amd build successfully. Select C# . Select the ColorsAPI app to run.
 
-![alt text](../images/run1.png)
+- The console log will display the URL web address of the application 
 
-Use the Swagger UI to test the WebApi
+- In a web browser access this URL but tack on /Swagger 
+
+![alttext](../images/run1.png)
+
+![alttext](../images/run2.png)
+
+Use the Swagger UI to test the API application
 
 - Get all Colors.
 
@@ -172,4 +215,8 @@ Use the Swagger UI to test the WebApi
 
 - Get a random color.
 
-![alt text](../images/run2.png)
+![alttext](../images/run3.png)
+
+![alttext](../images/run4.png)
+
+![alttext](../images/run5.png)

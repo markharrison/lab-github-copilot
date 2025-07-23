@@ -5,43 +5,44 @@ slug: /start
 
 # Getting Started
 
-## Start with nothing
+Some pre-checks to make sure GitHub Copilot is enabled and ready for coding.
 
-- Create empty folder and open Visual Studio Code in that folder.
+## Check GitHub Copilot is up to date 
 
-```powershell
-mkdir colorsapi
-cd colorsapi
-dir
-code . 
-
-```
+- Make sure the following extensions are updated to latest versions: GitHub Copilot, GitHub Copilot Chat, C# Dev Kit 
 
 ![alttext](../images/start1.png)
 
-## Check GitHub Copilot is enabled
+## Check GitHub Copilot is licensed 
 
-- Check GitHub Copilot and GitHub Copilot Chat extensions are installed.
-
-- Hover over icon in bottom right handcorner to show GitHub Copilot is running.
+- Hover over the Copilot icon in bottom right corner - if ncecessary, then sign-in to GitHub 
 
 ![alttext](../images/start2.png)
 
-- If not signed in, then authenticate to GitHub ... you will need credentials with an account that has GitHub Copilot enabled.
+- Once signed-in to GitHub, hover again over the Copilot icon to show the GitHub Copilot status
 
 ![alttext](../images/start3.png)
 
+## Check GitHub Copilot Completions is enabled
+
+- A Copilot icon is also to the right of the Command Pallete at the top - select the icon followed by menu option `Code Completions`
+
 ![alttext](../images/start4.png)
 
-## Check GitHub Copilot Chat is enabled
-
-- Select the Copilot Chat icon on the left ... notice the conversational GPT-like experience.
+- The Status should show as 'Ready'.  There are options for configuration settings and disgnostics.
 
 ![alttext](../images/start5.png)
 
-- Ask it a question.
+
+## Check GitHub Copilot Chat is enabled
+
+- Again select the icon next to the Command Pallete followed by menu option `Open Chat`
 
 ![alttext](../images/start6.png)
+
+- The Chat panel will appear ... ask it a question
+
+![alttext](../images/start7.png)
 
 ## Ready to code
 
