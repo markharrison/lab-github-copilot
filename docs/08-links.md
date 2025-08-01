@@ -18,3 +18,7 @@ slug: /Links
 [https://github.com/microsoft/CopilotHackathon](https://github.com/microsoft/CopilotHackathon)
 
 [https://github.com/sukantsondhi/Copilot-Workshop](https://github.com/sukantsondhi/Copilot-Workshop)
+
+## Awesome 
+
+  [A curated list of awesome GitHub instructions, prompt and chatmode markdown files for enhancing your GitHub Copilot AI experience](<https://github.com/Code-and-Sorts/awesome-copilot-instructions>)
