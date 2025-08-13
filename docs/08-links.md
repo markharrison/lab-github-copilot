@@ -21,4 +21,10 @@ slug: /Links
 
 ## Awesome 
 
-  [A curated list of awesome GitHub instructions, prompt and chatmode markdown files for enhancing your GitHub Copilot AI experience](<https://github.com/Code-and-Sorts/awesome-copilot-instructions>)
+A curated list of awesome GitHub instructions, prompt and chatmode markdown files for enhancing your GitHub Copilot AI experience:
+
+- [https://github.com/Code-and-Sorts/awesome-copilot-instructions](<https://github.com/Code-and-Sorts/awesome-copilot-instructions>)
+
+- [https://github.com/github/awesome-copilot](<https://github.com/github/awesome-copilot>)
+
+  
