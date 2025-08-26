@@ -1,11 +1,11 @@
 ---
-sidebar_label: 'Example'
+sidebar_label: 'Example .NET'
 slug: /caexample
 ---
 
 # GitHub Copilot Coding Agent
 
-## Example
+## Example - Colors API
 
  :::warning
 This document is work in progress
